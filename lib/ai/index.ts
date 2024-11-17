@@ -1,4 +1,4 @@
-import { openai, createOpenAI } from "@ai-sdk/openai";
+import { createOpenAI } from "@ai-sdk/openai";
 import { experimental_wrapLanguageModel as wrapLanguageModel } from "ai";
 
 import { customMiddleware } from "./custom-middleware";
@@ -11,10 +11,11 @@ export const customModel = (apiIdentifier: string) => {
   });
 };
 
-const provider = createOpenAI({
-  name: "ep-20241022215045-mvfsg",
+const openai = createOpenAI({
+  name: "openai",
   apiKey: process.env.OPENAI_API_KEY ?? "",
   baseURL: "https://ark.cn-beijing.volces.com/api/v3",
+  compatibility: "compatible",
 });
 
 // 使用自定义模型函数

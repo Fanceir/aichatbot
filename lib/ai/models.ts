@@ -22,4 +22,4 @@ export const models: Array<Model> = [
   },
 ] as const;
 
-export const DEFAULT_MODEL_NAME: string = "ep-20241022215045-mvfsg";
+export const DEFAULT_MODEL_NAME: string = "ep-20241117161603-w8qgj";

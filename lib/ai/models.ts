@@ -9,17 +9,17 @@ export interface Model {
 
 export const models: Array<Model> = [
   {
-    id: 'gpt-4o-mini',
-    label: 'GPT 4o mini',
-    apiIdentifier: 'gpt-4o-mini',
-    description: 'Small model for fast, lightweight tasks',
+    id: "Doubao-pro-32k/240828",
+    label: "Doubao-pro-32k/240828",
+    apiIdentifier: "Doubao-pro-32k/240828",
+    description: "Small model for fast, lightweight tasks",
   },
   {
-    id: 'gpt-4o',
-    label: 'GPT 4o',
-    apiIdentifier: 'gpt-4o',
-    description: 'For complex, multi-step tasks',
+    id: "Doubao-pro-256k/240828",
+    label: "Doubao-pro-256k/240828",
+    apiIdentifier: "Doubao-pro-256k/240828",
+    description: "For complex, multi-step tasks",
   },
 ] as const;
 
-export const DEFAULT_MODEL_NAME: string = 'gpt-4o-mini';
+export const DEFAULT_MODEL_NAME: string = "Doubao-pro-32k/240828";

@@ -18,10 +18,10 @@ export async function generateTitleFromUserMessage({
   const { text: title } = await generateText({
     model: customModel("grok-beta"),
     system: `\n
-    - you will generate a short title based on the first message a user begins a conversation with
-    - ensure it is not more than 80 characters long
-    - the title should be a summary of the user's message
-    - do not use quotes or colons`,
+    - 你将根据用户开始对话的第一条消息生成一个简短的标题
+    - 确保标题不超过80个字符
+    - 标题应是用户消息的摘要
+    - 不要使用引号或冒号`,
     prompt: JSON.stringify(message),
   });
 

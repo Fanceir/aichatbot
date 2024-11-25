@@ -9,17 +9,17 @@ export interface Model {
 
 export const models: Array<Model> = [
   {
-    id: "Doubao-pro-32k/240828",
-    label: "豆包基础版",
-    apiIdentifier: "ep-20241022215045-mvfsg",
+    id: "grok-beta",
+    label: "grok-beta",
+    apiIdentifier: "grok-beta",
     description: "Small model for fast, lightweight tasks",
   },
   {
-    id: "Doubao-pro-256k/240828",
-    label: "豆包加强版",
-    apiIdentifier: "ep-20241117161603-w8qgj",
+    id: "grok-vision-beta",
+    label: "grok-vision-beta",
+    apiIdentifier: "grok-vision-beta",
     description: "For complex, multi-step tasks",
   },
 ] as const;
 
-export const DEFAULT_MODEL_NAME: string = "ep-20241117161603-w8qgj";
+export const DEFAULT_MODEL_NAME: string = "gpt-4o-mini";
